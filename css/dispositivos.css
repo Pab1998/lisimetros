@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+ 
+/* HEADER */
+
+header {
+    height: 70px;
+    background: #4D4D5C;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   
+}
+.lista {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid #1d51fa;
+    border-bottom: 1px solid #1d51fa;
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 140px;
+}
+.lista:hover{
+    background-color: #1d51fa62;
+}
+.lista h3{
+text-decoration: none;
+color: #1d51fa;
+font-size: 23px;
+margin-left: 25px;
+}
+
+.lista img{
+    
+    width: 200px;
+    margin-right:15px;
+    margin-left: 15px;
+}
+
+#lista_dispositivos h2{
+    color: #1d51fa;
+    font-weight: 200;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+}
+
+.logo h2{
+    color: #1d51fa;
+    font-weight: 200;
+    font-size: 50px;
+}
+.logo img {
+    width: 55px;
+    margin-right: 15px;
+}
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+
+   
+
+}
+
+.mostrar-menu{
+    order: 1;
+
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #1d51fa;
+}
+
+#check{
+    display: none;
+   
+}
+
+#banner{
+    padding: 0 50px;
+    background-image: url(../img/dispobanner.jpg);
+    height: 25vh;
+    background-size:cover;
+    background-position: center;
+
+}
+#banner::before{
+    content: '';
+    background: rgba(77, 77, 92, 0.616);
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    left: 0;
+}
+
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+}
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 60px 0;
+    text-align: center;
+    
+
+}
+
+.contenedor_botones{
+    padding: 40px 20px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+
+}
+
+button {
+    background-color: #1d51fa; 
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 30vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+    border-radius: 12px;
+
+   
+}
+
+button:hover {
+    background-color: #527bff;
+    cursor: pointer;
+}
+
+#elem{
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#elemDato {
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+
+.dato, .valor {
+    width: 30vw;
+    padding: 10px;
+    background-color: #1d51fa;
+    border: 1px solid black;
+}
+
+.valor {
+    background: #527bff;
+
+}
+
+a{
+    text-decoration: none;
+}
+.programa {
+    background: #f1f1f1;
+    padding-bottom: 30px;
+}
+#programa{
+    min-height: 100vh;
+}
+.contenedorinnerReal, .todos_datos_historicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 5px 8px 15px 7px #535151;
+    margin: 0 20px;
+}
+.contenedorinnerReal h2 {
+    color: black;
+    padding-bottom: 10px;
+
+}
+.contenedorinnerReal2 h2 {
+    color: black;
+    padding-bottom: 10px;
+
+}
+.todos_datos_historicos{
+    padding: 0 120px;
+    color: black;
+}
+
+.dato_historico{
+    padding: 20px 0 5px 0;
+    border-bottom: 1px solid black;
+
+}
+#elem .todos_datos_historicos .dato_historico a{
+    color: #1d51fa;
+}
+#elem .todos_datos_historicos .dato_historico a:hover {
+    color: black;
+}
+
+
+
+.disable {
+    display: none;
+}
+
+.volver {
+    width: auto;
+    color: white;
+    margin-left: 45%;
+    margin-top: 40px;
+}
+.volver a {
+    color: white;
+}
+#lista_dispositivos{
+    min-height: 100vh;
+}
+.copi{
+
+    background-color: #4D4D5C;
+    text-align: center;
+    padding: 25px;
+    
+    
+    
+    }
+    .copi p{
+       font-size: 20px;
+       color: white;
+    }
+
+
+/* RESPONSIVE */
+@media(max-width:1010px){
+    /* HEADER */
+    header{
+        background-position: center;
+    }
+    .logo h2{
+        font-size: 30px;
+    }
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#4d4d5c; 
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    #banner{
+        padding: 0 50px;
+        background-image: url(../img/dispobanner.jpg);
+        height: 15vh;
+        background-size:cover;
+        background-position: center;
+    
+    }
+    #banner::before{
+        content: '';
+        background: rgba(77, 77, 92, 0.616);
+        position: absolute;
+        width: 100%;
+        height: 15vh;
+        left: 0;
+    }
+    .contenido-banner h3{
+        font-size: 30px;
+        font-weight: 400;
+        padding: 34px 0;
+        text-align: center;
+    }
+ 
+   .contenedor_botones{
+       flex-direction: column;
+       margin-left: 25%;
+   }
+
+   button{
+       width: 40vw;
+       margin: 10px 0;
+       
+   }
+   .lista {
+ 
+    border-top: 1px solid #1d51fa;
+    border-bottom: 1px solid #1d51fa;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 120px;
+}
+
+.lista h3{
+font-size: 17px;
+margin-left: 10px;
+}
+
+.lista img{
+    
+    width: 150px;
+    margin-right:15px;
+    margin-left: 15px;
+}
+.contenedor_botones{
+    width: 60vw;
+    
+
+}
+
+
+}
+
+@media (max-width:730px){
+    .todos_datos_historicos{
+        padding: 0 25px;
+    }
+    button{
+        width: 60%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px){
+    button{
+        width: 80%;
+        margin: 10px 0;
+    }
+}
